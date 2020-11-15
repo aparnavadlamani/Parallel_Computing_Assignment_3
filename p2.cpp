@@ -46,9 +46,9 @@ int main(int argc, char* argv[])
         {
             cout<<"Process "<<rank<<" received ";
             int sender = status.MPI_SOURCE;
-            for(int i=0;i<n;i++)
+            for(int j=0;j<n;j++)
             {
-                cout<<arr1[i]<<" ";
+                cout<<arr1[j]<<" ";
             }
             cout<<" from process"<<sender<<endl;
         }
